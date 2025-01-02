@@ -6,7 +6,6 @@
     <meta name="description" content="Kenali makanan-makanan tradisional di Sabah bersama Ricky.">
     <title>Kenali Makanan Tradisional Sabah bersama Ricky</title>
     <style>
-        /* Styling Laman Web */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -41,30 +40,47 @@
             max-width: 1200px;
             margin: auto;
         }
-        .food-item {
-            margin-bottom: 30px;
+        .section {
+            margin-bottom: 40px;
             background-color: white;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .food-item img {
-            max-width: 100%;
+        .gallery img {
+            width: 30%;
+            margin: 5px;
             border-radius: 10px;
         }
-        .food-item h2 {
-            color: #4CAF50;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #4CAF50;
             color: white;
-            margin-top: 20px;
         }
-        audio {
-            display: block;
-            margin: 20px auto;
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            padding: 5px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -74,40 +90,94 @@
         <p>Menelusuri warisan budaya Sabah melalui rasa dan tradisi.</p>
     </header>
     <nav>
-        <a href="#hinava">Hinava</a>
-        <a href="#linopot">Linopot</a>
-        <a href="#tuhau">Tuhau</a>
-        <a href="#bosou">Bosou</a>
+        <a href="#profile">Profile</a>
+        <a href="#audio">Audio</a>
+        <a href="#table">Table</a>
+        <a href="#skills">Skills</a>
+        <a href="#comments">Leave Comment</a>
+        <a href="#qa">Q&A Session</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
     </nav>
     <div class="container">
-        <section id="hinava" class="food-item">
-            <h2>Hinava</h2>
-            <img src="https://www.sayangsabah.com/wp-content/uploads/2021/04/hinava.jpg" alt="Hinava">
-            <p>Hinava adalah hidangan tradisional masyarakat Kadazan-Dusun. Ia menggunakan ikan segar seperti tenggiri yang dihiris halus, dicampur dengan bawang, cili, halia, dan perahan limau kasturi. Hidangan ini melambangkan keaslian rasa Sabah dan lazim dihidangkan semasa Pesta Kaamatan.</p>
+        <section id="profile" class="section">
+            <h2>Profile</h2>
+            <p>Hai! Saya Ricky, seorang pencinta budaya Sabah. Saya telah menjelajahi pelbagai pelosok Sabah untuk mempelajari dan memahami makanan-makanan tradisional yang menjadi kebanggaan negeri ini. Jom bersama saya meneroka warisan rasa dan budaya ini!</p>
         </section>
-        <section id="linopot" class="food-item">
-            <h2>Linopot</h2>
-            <img src="https://media.berita.my/resources/images/2020/linopot-sabah.jpg" alt="Linopot">
-            <p>Linopot adalah sejenis nasi yang dibungkus dalam daun pisang atau daun tarap. Hidangan ini biasanya dimakan bersama lauk tradisional seperti ayam masak sup atau ikan salai. Ia melambangkan kesederhanaan masyarakat Sabah.</p>
+        <section id="audio" class="section">
+            <h2>Audio Muzik Tradisional</h2>
+            <audio controls autoplay loop>
+                <source src="https://samplelib.com/lib/preview/mp3/sample-6s.mp3" type="audio/mpeg">
+                Browser anda tidak menyokong elemen audio.
+            </audio>
         </section>
-        <section id="tuhau" class="food-item">
-            <h2>Tuhau</h2>
-            <img src="https://borneosabah.com/images/tuhau.jpg" alt="Tuhau">
-            <p>Tuhau adalah acar khas Sabah yang diperbuat daripada batang tuhau. Ia direndam bersama cuka, cili, dan garam, memberikan rasa pedas dan masam yang unik. Aromanya mungkin agak kuat bagi sesetengah orang, tetapi ia adalah makanan kegemaran masyarakat tempatan.</p>
+        <section id="table" class="section">
+            <h2>Senarai Makanan Tradisional</h2>
+            <table>
+                <tr>
+                    <th>Nama Makanan</th>
+                    <th>Asal</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Hinava</td>
+                    <td>Kadazan-Dusun</td>
+                    <td>Ikan segar, halia, cili, limau kasturi</td>
+                </tr>
+                <tr>
+                    <td>Linopot</td>
+                    <td>Murut</td>
+                    <td>Nasi dibungkus daun</td>
+                </tr>
+                <tr>
+
+<td>Tuhau</td>
+                    <td>Sabah</td>
+                    <td>Acar pedas dengan aroma unik</td>
+                </tr>
+            </table>
         </section>
-        <section id="bosou" class="food-item">
-            <h2>Bosou</h2>
-            <img src="https://www.borneosabah.com/images/bosou.jpg" alt="Bosou">
-            <p>Bosou adalah makanan fermentasi tradisional yang menggunakan ikan, beras, dan garam. Proses fermentasi memberikan rasa masam yang khas, dan hidangan ini sering menjadi pelengkap kepada nasi panas.</p>
+        <section id="skills" class="section">
+            <h2>Skills Ricky</h2>
+            <div class="skills">
+                <ul>
+                    <li>Pemahaman mendalam tentang budaya makanan Sabah</li>
+                    <li>Kemahiran memasak makanan tradisional</li>
+                    <li>Pengalaman berkongsi ilmu budaya</li>
+                </ul>
+            </div>
+        </section>
+        <section id="comments" class="section">
+            <h2>Leave Comment</h2>
+            <form>
+                <label for="comment">Tinggalkan komen anda di sini:</label><br>
+                <textarea id="comment" name="comment"></textarea><br>
+                <button type="submit">Hantar</button>
+            </form>
+        </section>
+        <section id="qa" class="section">
+            <h2>Q&A Session</h2>
+            <p><strong>Q:</strong> Apakah makanan tradisional yang paling popular di Sabah?</p>
+            <p><strong>A:</strong> Hinava adalah antara makanan paling popular kerana rasanya yang segar dan unik.</p>
+        </section>
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://www.sayangsabah.com/wp-content/uploads/2021/04/hinava.jpg" alt="Hinava">
+                <img src="https://media.berita.my/resources/images/2020/linopot-sabah.jpg" alt="Linopot">
+                <img src="https://borneosabah.com/images/tuhau.jpg" alt="Tuhau">
+            </div>
+        </section>
+        <section id="video" class="section">
+            <h2>Video Perkenalan</h2>
+            <video controls width="100%">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Browser anda tidak menyokong elemen video.
+            </video>
         </section>
     </div>
     <footer>
-
-<p>&copy; 2024 Kenali Sabah bersama Ricky. Dibawakan khas untuk menghargai warisan budaya.</p>
+        <p>&copy; 2024 Kenali Sabah bersama Ricky. Semua hak cipta terpelihara.</p>
     </footer>
-    <audio controls autoplay loop>
-        <source src="https://www.myinstants.com/media/sounds/sabah-traditional.mp3" type="audio/mpeg">
-        Browser anda tidak menyokong elemen audio.
-    </audio>
 </body>
 </html>
